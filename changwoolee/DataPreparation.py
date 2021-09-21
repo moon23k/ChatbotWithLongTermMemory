@@ -36,3 +36,7 @@ if __name__ == "main":
     df = pd.read_excel("your/dir/filename")
     df_train = make_it_QAAQ(df)
     df_train.to_csv("your/dir/filename.csv",encoding='utf-8',index=False)
+
+
+
+

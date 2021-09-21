@@ -108,3 +108,6 @@ if __name__=="main":
             if batch_id % log_interval == 0:
                 print("epoch {} batch id {} loss {} train acc {}".format(e+1, batch_id+1, loss.data.cpu().numpy(), train_acc / (batch_id+1)))
         print("epoch {} train acc {}".format(e+1, train_acc / (batch_id+1)))
+
+
+        

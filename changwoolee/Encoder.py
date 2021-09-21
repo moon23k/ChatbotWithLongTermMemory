@@ -38,3 +38,6 @@ class BiEncoder(nn.Module):
         output = self.classifier(output)
         output = self.sigmoid(output)
         return output
+
+
+

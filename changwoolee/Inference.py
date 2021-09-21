@@ -62,3 +62,7 @@ if __name__=="main":
     
     result = inference(input_text, sentence_transform, model)
     # 추후 결과는 top k로 제공
+
+
+
+    
