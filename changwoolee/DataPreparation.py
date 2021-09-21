@@ -9,6 +9,7 @@ Input : A > Output : Q
 import pandas as pd
 import time
 
+
 def make_it_QAAQ(df):
     diction = {'Q':[],'A':[]}
     col_sen =  ['사람문장1','시스템응답1',
@@ -31,6 +32,7 @@ def make_it_QAAQ(df):
         print(i,'/',len(df),"\t",round(i/len(df)*100,2),"%" ,"\t", round(time.time()-starts,2),'s')
         starts = time.time()
     return pd.DataFrame.from_dict(diction)
+
 
 if __name__ == "main":
     df = pd.read_excel("your/dir/filename")

@@ -20,6 +20,8 @@ from kobert.pytorch_kobert import get_pytorch_kobert_model
 from DataLoader import BERTDataset
 from Encdoer import BiEncoder
 
+
+
 def calc_accuracy(X,Y):
     '''
     accuracy metric, 이 훈련에서 큰 의미는 없을 것으로 예상되나 모니터링을 위한용도로 사용
@@ -27,6 +29,8 @@ def calc_accuracy(X,Y):
     max_vals, max_indices = torch.max(X, 1)
     train_acc = (max_indices == Y).sum().data.cpu().numpy()/max_indices.size()[0]
     return train_acc
+
+
 
 if __name__=="main":
     # load data
@@ -110,4 +114,3 @@ if __name__=="main":
         print("epoch {} train acc {}".format(e+1, train_acc / (batch_id+1)))
 
 
-        

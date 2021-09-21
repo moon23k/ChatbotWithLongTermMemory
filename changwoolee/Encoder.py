@@ -1,6 +1,8 @@
 import torch
 from torch import nn
 
+
+
 class BiEncoder(nn.Module):
     def __init__(self, context_bert, response_bert, num_classes=1, dr_rate=None, params=None):
         super(BiEncoder, self).__init__()

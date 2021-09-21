@@ -73,6 +73,8 @@ class BERTDataset(Dataset):
     def __len__(self):
         return (len(self.labels))
 
+
+
 class InferenceSet(Dataset):
     def __init__(self, input_sentence, dataset, bert_tokenizer, max_len, pad, pair):
       self.transform = nlp.data.BERTSentenceTransform(bert_tokenizer, max_seq_length=max_len, pad=pad, pair=pair)

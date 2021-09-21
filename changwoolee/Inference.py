@@ -11,6 +11,8 @@ from transformers.optimization import get_cosine_schedule_with_warmup
 from kobert.utils import get_tokenizer
 from kobert.pytorch_kobert import get_pytorch_kobert_model
 from DataLoader import InferenceSet
+
+
 def inference(input_sentence,transform,model):
   scoring = {"index":[], "score":[]}
 
@@ -39,6 +41,8 @@ def inference(input_sentence,transform,model):
       torch.cuda.empty_cache()
   return scoring
 
+
+
 if __name__=="main":
     # set parameters
     max_len = 64
@@ -65,4 +69,3 @@ if __name__=="main":
 
 
 
-    
